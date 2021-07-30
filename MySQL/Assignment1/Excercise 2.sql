@@ -1,0 +1,7 @@
+CREATE TABLE Excercise2 (
+    id MEDIUMINT UNSIGNED PRIMARY KEY,
+    `name` VARCHAR(30) NOT NULL,
+    `code` CHAR(5) NOT NULL UNIQUE,
+    modified_date DATETIME DEFAULT NOW()
+);
+
