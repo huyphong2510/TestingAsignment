@@ -6,9 +6,9 @@ create table Trainee(
     full_name varchar(50) not null,
     birth_date date,
     gender enum('male','female','unknown'),
-    et_iq tinyint(20) unsigned not null,
-    et_gmath tinyint(20) unsigned not null,
-    et_english tinyint(50) unsigned not null,
+    et_iq tinyint unsigned check (et_iq < 20)  not null,
+    et_gmath tinyint unsigned check (et_iq < 20) not null,
+    et_english tinyint unsigned check (et_iq < 50) not null,
     training_class tinyint unsigned not null,
     evaluation_notes text
     
