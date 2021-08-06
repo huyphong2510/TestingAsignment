@@ -28,10 +28,6 @@ WHERE
 
 -- Viết câu query trả về tất cả các sản phẩm có giá rẻ nhất (lowest ListPrice) và Touring Bike (nghĩa là ProductSubcategoryID = 3)
 
-Select `name`, min(listprice) from Product where ProductSubcategoryID=3 group by `name` having min(listprice) > 1214.85 ;
-
-
-
 SELECT 
     `name`, MIN(listprice) as 'lowest ListPrice'
 FROM
